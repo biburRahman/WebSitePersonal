@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="pragma" content="no-cache">
+    <meta http-equiv="expires" content="-1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <title>Login Hotspot By Abibur</title>
+    <link rel="stylesheet" href="login.css" media="screen">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <!-- Box Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@2.0.7/css/boxicons.min.css">
+</head>
+
+<body class="login" style="background: #000000;">
+    <div class="intro">
+        <p>Selamat Datang di Hotspot SMK Negeri 8 Palembang</p>
+    </div>
+
+    $(if chap-id)
+    <form name="sendin" action="$(link-login-only)" method="post">
+        <input type="hidden" name="username" />
+        <input type="hidden" name="password" />
+        <input type="hidden" name="dst" value="$(link-orig)" />
+        <input type="hidden" name="popup" value="true" />
+    </form>
+
+    <script type="text/javascript" src="/md5.js"></script>
+    <script type="text/javascript">
+        <!--
+        function doLogin() {
+            document.sendin.username.value = document.login.username.value;
+            document.sendin.password.value = hexMD5('$(chap-id)' + document.login.password.value + '$(chap-challenge)');
+            document.sendin.submit();
+            return false;
+        }
+        //-->
+    </script>
+    $(endif)
+
+    <form class="vertical-form" name="login" action="$(link-login-only)" method="post"
+        style="background: #000000;" $(if chap-id) onSubmit="return doLogin()" $(endif)>
+        <input type="hidden" name="dst" value="$(link-orig)" />
+        <input type="hidden" name="popup" value="true" />
+        <div style="margin: 0; padding: 0; display: inline;"></div>
+
+        <!-- Hapus atau isi dengan konten yang sesuai jika tidak menggunakan <fieldset> -->
+        <legend>
+            <img class="logo" src="logo.gif" alt="Logo" />
+        </legend>
+
+        <input autocomplete="on" name="username" type="text" value="$(username)" placeholder=" Username" size="15" />
+        <input autocomplete="off" name="password" type="password" label="false" placeholder=" Password" size="15" />
+        <input name="submit" type="submit" value=" " />
+
+        <section class="contact" id="contact">
+            <div class="social">
+                <a href="https://www.facebook.com/tokoh.masyarakat.3532"><i class='bx bxl-facebook'></i></a>
+                <a href="https://www.instagram.com/hbybrhman31"><i class='bx bxl-instagram'></i></a>
+                <a href="https://wa.me/6289502826895"><i class='bx bxl-whatsapp'></i></a>
+            </div>
+            <div class="links">
+                <a href="#">My Social Media</a>
+            </div>
+            <p>&#169; All Right Reserved @Abibur.Rahman</p>
+        </section>
+
+        <div class='footer'>
+            <p>$(if trial == 'yes')Free trial available, <a
+                    href="$(link-login-only)?dst=$(link-orig-esc)&amp;username=T-$(mac-esc)">click here</a>.$(endif)</p>
+            <p>$(if error)<span style="color: #ffffff; font-size: 16px">$(error)</span>$(endif)</p>
+            <br>
+            <p></p>
+        </div>
+    </form>
+
+    <script type="text/javascript">
+        <!--
+        document.login.username.focus();
+        //-->
+    </script>
+    <script type="text/javascript">
+        document.oncontextmenu = function () {
+            return false;
+        }
+    </script>
+</body>
+
+</html>
