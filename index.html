@@ -3,9 +3,11 @@
 
 <head>
     <meta charset="UTF-8">
-    <link rel="shortcut icon" type="x-icon" href="img/user.webp" <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="shortcut icon" type="x-icon" href="img/abibur.png" <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WebPortofolioAbibur</title>
+    <!-- box icons2 -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <!-- Box Icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
     <!-- Link To CSS -->
@@ -17,27 +19,32 @@
 <body>
     <!-- Navbar -->
     <header>
-        <a href="#" class="logo">AbiburRahman</a>
+        <a href="#" class="logo">MyFortofolio</a>
         <div class="bx bx-menu" id="menu-icon"></div>
 
         <ul class="navbar">
-            <li><a href="#home"><i class="fa fa-home" aria-hidden="true"></i>Home</a></li>
-            <li><a href="#services">Aboutme</a></li>
-            <li><a href="#chefs">Skil</a></li>
-            <li><a href="#contact"><i class="fa fa-phone-square" aria-hidden="true"></i>Contact</a></li>
+            <li><a href="#home"><i class="fa fa-home" aria-hidden="true"></i>Home<span></span></a></li>
+            <li><a href="#services">Aboutme<span></span></a></li>
+            <li><a href="#chefs">Skil<span></span></a></li>
+            <li><a href="#contact"><i class="fa fa-phone-square" aria-hidden="true"></i>Contact<span></span></a></li>
         </ul>
     </header>
     <!-- Home -->
     <section class="home" id="home">
-        <div class="home-text">
+        <div class="home-text" id="">
             <h3>Assalamu"alaikum </h3>
-            <h1>hiii... <br />Saya bibur <br /><span>Pelajar & Enginering </span></h1>
-            <p>web ini saya buat agar lebih mudah untuk berkenalan baik saya maupun anda.</p>
+            <h1>hiii <span id="id"></span>
+                <h1 />Saya bibur
+                <h1 />
+                <h2><span id="teks"></span></h2>
+            </h1>
+            <!-- <p id="teks"><span>Pelajar & Enginering </span></p> -->
             <a href="#contact" class="btn">HubungiSaya</a>
         </div>
         <div class="home-img">
-            <img src="img/abibur.png" alt="#">
+            <img src="img/abibur.png" alt="#" class="img">
         </div>
+
     </section>
     <!-- Services -->
     <section class="services" id="services">
@@ -49,7 +56,7 @@
             <div class="box">
                 <img src="img/user.webp" alt="">
                 <h2>Introduction</h2>
-                <p>nama Lengkap saya AbiburRahman,saya skrng sedang menempuh pendidikan di SMK Negeri 8 Palembang di
+                <p>nama Lengkap saya AbiburRahman,saya lulusan dari SMK Negeri 8 Palembang di bagian
                     Jurusan Tekhnik Komputer dan Jaringan .</p>
             </div>
             <div class="box">
@@ -60,10 +67,10 @@
                     ALL operator dan masih banyak lagi </p>
             </div>
             <div class="box">
-                <img src="img/icon mapsb.jpg" alt="">
+                <a href="https://maps.app.goo.gl/9hexBU2rohsyVGdM6"> <img src="img/icon mapsb.jpg" alt=""></a>
                 <h2>Alamat</h2>
-                <p>saya tinggal di Kertapati, Kecamatan Seberang Ulu1, kota Palembang, Sumatera Selatan, Negara Kesatuan
-                    Republik Indonesia.</p>
+                <p>saya tinggal di Kertapati, Kecamatan Seberang Ulu1, kota Palembang,untuk lebih jelasnya anda klik
+                    saja logo pada icon di atas</p>
             </div>
         </div>
     </section>
@@ -76,7 +83,7 @@
         </div>
         <div class="chefs-container">
             <div class="chef-box">
-                <img src="img/Bibur-Coding.jpeg" alt="">
+                <img src="img/Bibur-Coding.jpeg" alt="" class="box-img">
                 <div class="text">
                     <h2>Ngoding</h2>
                     <p>saya tidak terlalu menguasi dunia per codingan namun juga tidak terlalu buta akan dunia
@@ -147,12 +154,31 @@
             </form>
         </div>
     </section>
+
+    <!-- quotes -->
+    <div class="kata-kata">
+        <div class="quetes">
+            <h1>
+                <span class="Q">Q</span>
+                <span class="U">u</span>
+                <span class="O">o</span>
+                <span class="T">t</span>
+                <span class="E">e</span>
+                <span class="S">s</span>
+            </h1>
+            <p> <span id="element">****</span></p>
+        </div>
+    </div>
+    <!-- quotes -->
+
     <!-- Copyright -->
     <section class="contact" id="contact">
         <div class="social">
-            <a href="https://www.facebook.com/tokoh.masyarakat.3532"><i class='bx bxl-facebook'></i></a>
-            <a href="https://www.instagram.com/hbybrhman31"><i class='bx bxl-instagram'></i></a>
-            <a href="https://wa.me/6289502826895"><i class='bx bxl-whatsapp'></i></a>
+            <a href="https://www.facebook.com/tokoh.masyarakat.3532"><i class='bx bxl-facebook bx-tada'
+                    style='color:#ffffff'></i></a>
+            <a href="https://www.instagram.com/hbybrhman31"><i class='bx bxl-instagram bx-spin'
+                    style='color:#ffffff'></i></a>
+            <a href="https://wa.me/6289502826895"><i class='bx bxl-whatsapp bx-tada' style='color:#ffffff'></i></a>
         </div>
         <div class="links">
             <a href="#">MY social-media</a>
@@ -164,8 +190,68 @@
 
 
 
+    <!-- Load library from the CDN -->
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+    <!-- Setup and start animation! -->
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['<i>siapa yang tak pernah </i> merasakan pahitnya sebuah perjuangan makan ia tidak akan pernah tahu apa arti dari sebuah kesuksesan _Bibur'
+                , 'Jalan keluar terbaik selalu melalui masalah ― Robert Frost ',
+                "aku pernah meraskan semua kepahitan dalam hidup namun yang paling pahit ialah berharap terhadap manusia _ Sayyidina Ali bin Abi Tahlib",
+                "lebih baik di beci apa adanya dari pada di cintai ada apanya _ Andre Gide",
+                "berusahalah untuk tidak menjadi sukses namun usaha lah untuk menjadi bernilai _ Albert Einstein",
+                "balas dendam terbaik ialah dengan menjadikan dirimu menjadi suksesn _ Frank Sinatra",
+                "jika tidak hari ini maka kapa lagi _ bibur",
+                "hanya dia yang mencoba hal aneh yang mampuh mencapai hal yang mustahil _ miguel de unamuno",
+                "pergilah bersamanya jika itu maumu namun jangan kembali kepadaku jika kau mendapatkan hal yang sama darinya _ bibur",
+                "kau berhak mencintainya namun ia berhak memilih orang yang ia cintai _ faan",],
+            typeSpeed: 50,
+            backSpeed: 20,
+            waitUntilVisible: true,
+            loop: true
+        });
+    </script>
+    <!-- teks animation -->
+    <script>
+        var typed = new Typed('#teks', {
+            strings: ['<i>Teknik</i> komputer dan jaringan',
+                "web development",
+                "teknisi komputer",
+                "services handphone , ganti lcd,batrai,fleksibel on/of power up/down dll",
+                "Owner Of AbiburSTore"
+            ],
+            typeSpeed: 50,
+            backSpeed: 30,
+            waitUntilVisible: true,
+            loop: true
+        });
+    </script>
+    <!-- hii animation -->
+    <script>
+        var typed = new Typed('#id', {
+            strings: ["...",
+                "....",
+                ".....",
+                ".....",
+                "......",
+                "......."
+            ],
+            typeSpeed: 200,
+            backSpeed: 200,
+            waitUntilVisible: true,
+            loop: true
+        });
+    </script>
+
+
     <!-- Link To Js -->
     <script src="main.js"></script>
+    <!--link to teks  -->
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+
+
 </body>
 
 </html>
