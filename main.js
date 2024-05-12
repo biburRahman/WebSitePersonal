@@ -22,3 +22,5 @@ var typed = new Typed(".#tes", {
   strings: ["<i>First</i> sentence.", "&amp; a second sentence."],
   typeSpeed: 50,
 });
+
+// testing
