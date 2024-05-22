@@ -983,6 +983,170 @@ textarea {
   padding: 20px;
   text-align: center;
 }
+
+/* .container-certificate {
+  position: relative;
+  min-height: 100vh;
+}
+.container-certificate h1 {
+  font-size: 40px;
+  text-align: center;
+  padding: 15px;
+  text-transform: capitalize;
+}
+.container-certificate h1 span {
+  color: var(--text2-color);
+}
+.container-certificate .img-certificate {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+  padding: 10px;
+}
+.container-certificate .img-certificate .img-certi {
+  height: 250px;
+  width: 350px;
+  border: 5px solid var(--text2-color);
+  box-shadow: 0 5px 15 rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  cursor: pointer;
+}
+.container-certificate .img-certificate .img-certi img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  transition: 0.2s linear;
+  -webkit-transition: 0.2s linear;
+  -moz-transition: 0.2s linear;
+  -ms-transition: 0.2s linear;
+  -o-transition: 0.2s linear;
+}
+.container-certificate .img-certificate .img-certi:hover img {
+  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -o-transform: scale(1.1);
+} */
+/* test certi end */
+
+/* certi Start */
+.h1Certificate{
+  text-align: center;
+  margin: 2rem;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+  background-color: var(--bg-color);
+  border-radius: 2rem;
+  color: var(--text-color);
+  -webkit-border-radius: 2rem;
+  -moz-border-radius: 2rem;
+  -ms-border-radius: 2rem;
+  -o-border-radius: 2rem;
+  transition: 0.5s ease-in-out;
+  -webkit-transition: 0.5s ease-in-out;
+  -moz-transition: 0.5s ease-in-out;
+  -ms-transition: 0.5s ease-in-out;
+  -o-transition: 0.5s ease-in-out;
+}
+.h1Certificate span{
+  color: var(--text2-color);
+  transition: 0.5s ease-in-out;
+
+}
+.h1Certificate:hover{
+  color: var(--text2-color);
+}
+.h1Certificate span:hover{
+  color: var(--text-color);
+}
+
+.certificate-container{
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: var(--bg-color);
+  margin-bottom: 2rem;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+  border-radius: 1rem;
+  -webkit-border-radius: 1rem;
+  -moz-border-radius: 1rem;
+  -ms-border-radius: 1rem;
+  -o-border-radius: 1rem;
+}
+.card{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
+  justify-content: center;
+  padding: 10px;
+  margin-top: 1rem;
+}
+.img-cer{
+  height: 250px;
+  width: 350px;
+  border: 5px solid var(--text2-color);
+  box-shadow: 0 5px 15 rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  /* cursor: pointer; */
+  /* gap: 40rem; */
+}
+.img-cer img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  transition: 0.2s linear;
+  -webkit-transition: 0.2s linear;
+  -moz-transition: 0.2s linear;
+  -ms-transition: 0.2s linear;
+  -o-transition: 0.2s linear;
+}
+.img-cer img:hover{
+  transform: scale(1.1);
+}
+.overlay-certificate{
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  background-color: rgba(0, 0, 0, 0.);
+  -webkit-transition:.7s ease-in-out ;
+
+  z-index: 99999999;
+  text-align: center;
+  justify-content: center;
+  padding: 130px 0;
+}
+.overlay-certificate img{
+  width: 50%;
+  margin: auto ;
+}
+#cer2 img{
+width: 30%;
+margin-top: -5rem;
+}
+.overlay-certificate:target{
+  left: 0;
+  right: 0;
+  width: auto;
+  height: auto;
+  background-color: rgba(0, 0, 0, 0.443);
+  transition:.7s ease-in-out ;
+  -webkit-transition:.7s ease-in-out ;
+  -moz-transition:.7s ease-in-out ;
+  -ms-transition:.7s ease-in-out ;
+  -o-transition:.7s ease-in-out ;
+}
+
+
+
+
+/* certi Start end */
+
 /* Making Responsive */
 @media (max-width: 991px) {
   header {
@@ -1020,6 +1184,16 @@ textarea {
     display: initial;
     color: var(--text2-color);
   }
+  .overlay-certificate img{
+    width: 80%;
+    margin: auto 0;
+    margin-top: 6rem;
+  }
+  #cer2 img{
+    width: 80%;
+    margin-top: -5rem;
+    }
+
   header .navbar {
     position: absolute;
     top: -400px;
@@ -1027,7 +1201,7 @@ textarea {
     right: 0;
     display: flex;
     flex-direction: column;
-    text-align: center;
+    text-alig
     background: var(--second-color);
     box-shadow: 0 4px 4px rgb(0 0 0 / 10%);
     transition: 0.5s;

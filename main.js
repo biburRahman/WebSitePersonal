@@ -23,4 +23,12 @@ var typed = new Typed(".#tes", {
   typeSpeed: 50,
 });
 
-// testing
+// Galerty
+// const elemntclose = document.getElementsByClassName(".overlay-certificate");
+// for (let i = 0; i < elemntclose.length; i++) {
+//   elemntclose[i].addEventListener("click", function () {
+//     // let url = window.location.href.substr(0, window.location.href.indexOf("#"));
+//     // window.location = url;
+//     console.log("saya berhasil");
+//   });
+// }
